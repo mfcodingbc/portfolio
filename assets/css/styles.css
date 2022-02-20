@@ -3,7 +3,7 @@
 --primary-color: #527aaf;
 --secondary-color: #d4a219;
 --teritarty-color: #634b4b;
---hover-cover: #55bd00;
+--hover-color: #55bd00;
 }
 
 * {
@@ -15,6 +15,7 @@
 /* Body Styles */
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--primary-color);
 }
 
  /* <header> Styles */
@@ -63,7 +64,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background: var(--teritarty-color), rgba(0, 0, 0, 0.5);
-    color: var(--hover-cover);
+    color: var(--hover-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -74,7 +75,7 @@ footer {
     width: 100%;
     padding: 40px 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -83,16 +84,14 @@ footer h2 {
     font-size: 30px;
     margin: 0;
 }
-
+footer h2:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(212, 162, 25, 0.5);
+}
 footer div {
     line-height: 1.5;
     text-align: right;
 }
-
-body {
-    background-color: var(--primary-color);
-}
-
 
 /* Hero Styles */
 
@@ -142,6 +141,7 @@ body {
     border-right: solid;
     padding: 0 5px 0 50px;
     font-size: 25px;
+    text-align: right;
 }
 
 .about-text {
@@ -149,4 +149,8 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 0 20px;
+    margin: 0 5px;
+    background-color: var(--teritarty-color);
+    border-radius: 15px;
+    line-height: 1.5;
 }
