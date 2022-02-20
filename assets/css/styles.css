@@ -1,7 +1,10 @@
-/* add common styles here 
+/* Common Styles  */
 :root {
-
-}*/
+--primary-color: #527aaf;
+--secondary-color: #d4a219;
+--teritarty-color: #634b4b;
+--hover-cover: #55bd00;
+}
 
 * {
     margin: 0;
@@ -16,24 +19,72 @@ body {
 
  /* <header> Styles */
  header {
+    background-color: var(--teritarty-color);
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 40px;
-    background-image: url("../images/mitchell-frey-sydney-profile-photo.jpg");
-    background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;
+    position: static;
+    top: 0px;
     z-index: 9999;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
-    color: var(--primary-color);
+    font-size: 50px;
+    color: var(--teritarty-color);
     margin: 0;
+    text-shadow: 0 0 10px rgba(212, 162, 25, 1);
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    margin: 7px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 20px 0 0 0;
+}
+
+header nav ul li a {
+    color: var(--secondary-color);
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 1.75vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--teritarty-color), rgba(0, 0, 0, 0.5);
+    color: var(--hover-cover);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* <footer> Styles */
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--teritarty-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
 }
