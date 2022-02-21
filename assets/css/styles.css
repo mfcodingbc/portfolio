@@ -106,6 +106,7 @@ footer div {
     margin-bottom: 50px;
 }
 
+/* The photo with alt tag (same as in the hero selector) is hidden and shrunk */
 .hero img {
     opacity: 0;
     max-width: 1%;
@@ -127,25 +128,17 @@ footer div {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Sections Styles */
-.section {
-    margin: auto;
-    display: flex;
-}
-
 .section-title {
-    display: flex;
-    flex-direction: column;
+    font-size: 30px;
+    align-self: stretch;
     align-items: flex-end;
-    flex-wrap: wrap;
-    border-right: solid;
-    padding: 0 5px 0 50px;
-    font-size: 25px;
     text-align: right;
+    border-right: solid;
+    padding-right: 10px;
 }
 
+/* About Me Styles */
 .about-text {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 20px;
@@ -153,4 +146,64 @@ footer div {
     background-color: var(--teritarty-color);
     border-radius: 15px;
     line-height: 1.5;
+}
+
+.section-about {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-about .section-title {
+    width: 40%;
+}
+
+/* Work Styles */
+
+.section-work {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.work-content {
+    height: auto;
+    width: 50%;
+    padding: 10px 10px;
+}
+
+.work-content img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.work-content img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: .5s ease;
+}
+
+.work-row {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 10px;
+}
+
+.work-text {
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(99, 75, 75, 0.5);
+    border-radius: 15px;
+    color: var(--secondary-color);
+    width: 50%;
 }
