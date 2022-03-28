@@ -25,7 +25,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Finished Project Links
 
-URL to site: 
+URL to site: https://mfcodingbc.github.io/portfolio/
 
 URL to GitHub Repository: https://github.com/mfcodingbc/portfolio
 
